@@ -18,8 +18,8 @@ public class DeMariaIgorClass {
 	 */
 	public int DeMariaMet(int s, int f) {
 		int r = 0;
-		for (int i = 1; i < f; i++) {
-			r = r * r;
+		for (int i = 1; i <= f; i++) { // formula che permette di sommare per f volte il valore s ad r
+			r += s;
 		}
 		return r;
 	}
@@ -30,7 +30,7 @@ public class DeMariaIgorClass {
 	 */
 	public static void main(String[] args) {
 		DeMariaIgorClass a = new DeMariaIgorClass();
-		System.out.println(a.DeMariaMet(2, 3));
+		System.out.println(a.DeMariaMet(5, 4));
 	}
 
 }
